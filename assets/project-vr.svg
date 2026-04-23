@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#120C0D"/>
+  <circle cx="124" cy="74" r="6" fill="#FF2945"/>
+  <circle cx="150" cy="74" r="6" fill="#FF2945"/>
+  <circle cx="176" cy="74" r="6" fill="#FF2945"/>
+  <rect x="56" y="98" width="528" height="204" rx="20" stroke="#D6001C" stroke-width="3"/>
+  <path d="M130 200C130 147.01 172.01 105 225 105H415C467.99 105 510 147.01 510 200C510 252.99 467.99 295 415 295H225C172.01 295 130 252.99 130 200Z" fill="#191919"/>
+  <rect x="238" y="171" width="164" height="58" rx="12" stroke="#FF2945" stroke-width="2"/>
+  <text x="320" y="336" fill="#F5F5F5" font-family="Inter, Arial, sans-serif" font-size="24" text-anchor="middle">VR AUDIO MODEL</text>
+</svg>

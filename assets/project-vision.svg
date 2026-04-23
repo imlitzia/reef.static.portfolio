@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#0F0F0F"/>
+  <rect x="88" y="72" width="464" height="216" rx="16" stroke="#D6001C" stroke-width="3"/>
+  <rect x="120" y="106" width="200" height="150" rx="10" fill="#1B1B1B"/>
+  <rect x="340" y="106" width="180" height="22" rx="6" fill="#2A2A2A"/>
+  <rect x="340" y="140" width="156" height="18" rx="6" fill="#242424"/>
+  <rect x="340" y="170" width="168" height="18" rx="6" fill="#242424"/>
+  <rect x="340" y="200" width="132" height="18" rx="6" fill="#242424"/>
+  <circle cx="220" cy="170" r="34" stroke="#FF2945" stroke-width="4"/>
+  <path d="M245 194L274 223" stroke="#FF2945" stroke-width="8" stroke-linecap="round"/>
+  <text x="320" y="336" fill="#F5F5F5" font-family="Inter, Arial, sans-serif" font-size="24" text-anchor="middle">COMPUTER VISION</text>
+</svg>

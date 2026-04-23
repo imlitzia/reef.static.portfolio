@@ -21,32 +21,45 @@
       <nav class="top-nav">
         <p class="brand">AARIF.SUKSAI</p>
         <div class="nav-links">
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-          <a href="#contact">Contact</a>
+          <a href="#experience" data-i18n="nav_experience">Experience</a>
+          <a href="#projects" data-i18n="nav_projects">Projects</a>
+          <a href="#skills" data-i18n="nav_skills">Skills</a>
+          <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Toggle language">
+          日本語
+        </button>
       </nav>
 
       <div class="hero-content">
-        <p class="tag">Computer Science • UX • VR • AI</p>
-        <h1>Building human-centered products with code, design, and immersive tech.</h1>
-        <p class="intro">
+        <p class="tag" data-i18n="tagline">Computer Science • UX • VR • AI</p>
+        <h1 data-i18n="hero_title">Building human-centered products with code, design, and immersive tech.</h1>
+        <p class="intro" data-i18n="hero_intro">
           I am Aarif Suksai, a Computer Science student at Shibaura Institute of
           Technology. I create modern web experiences, AI-powered tools, and VR
           research prototypes that improve how people interact and communicate.
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">Explore Work</a>
-          <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+          <a class="btn btn-primary" href="#projects" data-i18n="hero_cta_work">Explore Work</a>
+          <a class="btn btn-ghost" href="#contact" data-i18n="hero_cta_contact">Get In Touch</a>
+        </div>
+        <div class="social-links">
+          <a id="githubLink" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a id="linkedinLink" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </header>
 
     <main class="masonry-layout">
+      <section class="card profile-card">
+        <img class="profile-image" src="./assets/profile-placeholder.svg" alt="Aarif Suksai profile photo" />
+        <h2>Aarif Suksai</h2>
+        <p data-i18n="profile_role">Computer Science Student / Front-End Engineer / UX-VR Researcher</p>
+      </section>
+
       <section class="card card-wide" id="summary">
-        <h2>Professional Summary</h2>
-        <p>
+        <h2 data-i18n="summary_title">Professional Summary</h2>
+        <p data-i18n="summary_body">
           Currently pursuing a degree in Computer Science at Shibaura Institute of
           Technology. I am passionate about software development, UX design, and VR
           technologies. My current research focuses on dynamic audio models to improve
@@ -56,75 +69,79 @@
 
       <section class="card" id="experience">
         <h2>BEENOS Inc.</h2>
-        <p class="meta">Front-End Engineer • Jan 2025 – Mar 2026 • Tokyo</p>
+        <p class="meta" data-i18n="beenos_meta">Front-End Engineer • Jan 2025 – Mar 2026 • Tokyo</p>
         <ul>
-          <li>Developed dynamic applications with JavaScript (ES6+), HTML5, and CSS3.</li>
-          <li>Improved UX through GTM-based behavior analysis and A/B testing.</li>
-          <li>Built responsive cross-browser interfaces and optimized performance.</li>
-          <li>Created OCR + LLM API workflow for PDF extraction and structuring.</li>
+          <li data-i18n="beenos_1">Developed dynamic applications with JavaScript (ES6+), HTML5, and CSS3.</li>
+          <li data-i18n="beenos_2">Improved UX through GTM-based behavior analysis and A/B testing.</li>
+          <li data-i18n="beenos_3">Built responsive cross-browser interfaces and optimized performance.</li>
+          <li data-i18n="beenos_4">Created OCR + LLM API workflow for PDF extraction and structuring.</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>TaskAlly</h2>
-        <p class="meta">iOS App Engineer • Aug 2024 – Present • Tokyo</p>
+        <p class="meta" data-i18n="taskally_meta">iOS App Engineer • Aug 2024 – Present • Tokyo</p>
         <ul>
-          <li>Built a subscription-based task management app during a hackathon.</li>
-          <li>Led App Store deployment and landing page design.</li>
-          <li>Implemented task visualization and smart notifications.</li>
+          <li data-i18n="taskally_1">Built a subscription-based task management app during a hackathon.</li>
+          <li data-i18n="taskally_2">Led App Store deployment and landing page design.</li>
+          <li data-i18n="taskally_3">Implemented task visualization and smart notifications.</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>Mobispace</h2>
-        <p class="meta">Graphic / Brand Designer • Apr 2024 – Present • Tokyo</p>
+        <p class="meta" data-i18n="mobispace_meta">Graphic / Brand Designer • Apr 2024 – Present • Tokyo</p>
         <ul>
-          <li>Produced logos and campaign visuals aligned with brand goals.</li>
-          <li>Designed market-focused creative assets with Adobe and Figma.</li>
+          <li data-i18n="mobispace_1">Produced logos and campaign visuals aligned with brand goals.</li>
+          <li data-i18n="mobispace_2">Designed market-focused creative assets with Adobe and Figma.</li>
         </ul>
       </section>
 
       <section class="card">
         <h2>AVILEN Inc.</h2>
-        <p class="meta">Software Engineer Intern • Dec 2023 – Sep 2024 • Tokyo</p>
+        <p class="meta" data-i18n="avilen_meta">Software Engineer Intern • Dec 2023 – Sep 2024 • Tokyo</p>
         <ul>
-          <li>Developed SPA features using Next.js, React, TypeScript, Tailwind CSS.</li>
-          <li>Integrated REST APIs for real-time data rendering.</li>
-          <li>Handled full lifecycle from requirement definition to release.</li>
+          <li data-i18n="avilen_1">Developed SPA features using Next.js, React, TypeScript, Tailwind CSS.</li>
+          <li data-i18n="avilen_2">Integrated REST APIs for real-time data rendering.</li>
+          <li data-i18n="avilen_3">Handled full lifecycle from requirement definition to release.</li>
         </ul>
       </section>
 
       <section class="card card-wide" id="projects">
-        <h2>Featured Projects</h2>
+        <h2 data-i18n="projects_title">Featured Projects</h2>
         <div class="project-grid">
           <article>
+            <img src="./assets/project-vr.svg" alt="VR audio model project thumbnail" />
             <h3>Dynamic Audio Model for VR Poster Sessions</h3>
             <p>Unity • Unreal Engine • VR Audio API</p>
-            <p>
+            <p data-i18n="project_1_body">
               Optimized speech clarity by adjusting audio rendering based on speaker
               position and emotional state to reduce listener fatigue.
             </p>
           </article>
           <article>
+            <img src="./assets/project-vision.svg" alt="Computer vision project thumbnail" />
             <h3>Computer Vision for Object Recognition</h3>
             <p>Python • OpenCV</p>
-            <p>
+            <p data-i18n="project_2_body">
               Built a real-time recognition system for image/video streams with 85%
               accuracy in security-oriented use cases.
             </p>
           </article>
           <article>
+            <img src="./assets/project-iot.svg" alt="IoT light sensor project thumbnail" />
             <h3>Home IoT Light Sensor with Arduino</h3>
             <p>Arduino • C/C++</p>
-            <p>
+            <p data-i18n="project_3_body">
               Designed a real-time ambient light detection device for smart home and
               energy-saving scenarios.
             </p>
           </article>
           <article>
+            <img src="./assets/project-ml.svg" alt="Machine learning recommendation project thumbnail" />
             <h3>Machine Learning Recommendation System</h3>
             <p>Python • Scikit-learn</p>
-            <p>
+            <p data-i18n="project_4_body">
               Implemented collaborative filtering methods and applied predictive
               analytics to medical datasets.
             </p>
@@ -133,17 +150,17 @@
       </section>
 
       <section class="card" id="education">
-        <h2>Education</h2>
-        <p class="meta">Shibaura Institute of Technology • Tokyo</p>
-        <p>Bachelor of Computer Science (Expected Graduation: 2025)</p>
-        <p class="small">
+        <h2 data-i18n="education_title">Education</h2>
+        <p class="meta" data-i18n="education_school">Shibaura Institute of Technology • Tokyo</p>
+        <p data-i18n="education_degree">Bachelor of Computer Science (Expected Graduation: 2025)</p>
+        <p class="small" data-i18n="education_research">
           Research: Kansei Engineering in VR, dynamic audio models for speech
           intelligibility and comfort.
         </p>
       </section>
 
       <section class="card" id="skills">
-        <h2>Technical Skills</h2>
+        <h2 data-i18n="skills_title">Technical Skills</h2>
         <ul class="chips">
           <li>Python</li>
           <li>JavaScript</li>
@@ -165,32 +182,32 @@
       </section>
 
       <section class="card">
-        <h2>Awards</h2>
+        <h2 data-i18n="awards_title">Awards</h2>
         <ul>
-          <li>Grand Prize Winner - Official Logo Design Contest at SIT</li>
-          <li>Team Leader - Best Team at an Engineering Camp</li>
+          <li data-i18n="awards_1">Grand Prize Winner - Official Logo Design Contest at SIT</li>
+          <li data-i18n="awards_2">Team Leader - Best Team at an Engineering Camp</li>
         </ul>
       </section>
 
       <section class="card">
-        <h2>Languages</h2>
+        <h2 data-i18n="languages_title">Languages</h2>
         <ul>
-          <li>Thai: Native</li>
-          <li>English: Advanced</li>
-          <li>Japanese: Advanced</li>
+          <li data-i18n="languages_1">Thai: Native</li>
+          <li data-i18n="languages_2">English: Advanced</li>
+          <li data-i18n="languages_3">Japanese: Advanced</li>
         </ul>
       </section>
 
       <section class="card card-accent" id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:imlitziashigoto@gmail.com">imlitziashigoto@gmail.com</a></p>
-        <p>Phone: <a href="tel:+818062424460">080-6242-4460</a></p>
-        <p>Open to software engineering, UX, and immersive technology opportunities.</p>
+        <h2 data-i18n="contact_title">Contact</h2>
+        <p><span data-i18n="contact_email">Email</span>: <a href="mailto:imlitziashigoto@gmail.com">imlitziashigoto@gmail.com</a></p>
+        <p><span data-i18n="contact_phone">Phone</span>: <a href="tel:+818062424460">080-6242-4460</a></p>
+        <p data-i18n="contact_text">Open to software engineering, UX, and immersive technology opportunities.</p>
       </section>
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Aarif Suksai. Built for GitHub Pages.</p>
+      <p><span data-i18n="footer_text">©</span> <span id="year"></span> Aarif Suksai. <span data-i18n="footer_built">Built for GitHub Pages.</span></p>
     </footer>
 
     <script src="./script.js"></script>

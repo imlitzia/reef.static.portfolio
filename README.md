@@ -2,6 +2,13 @@
 
 A static portfolio website designed with a dark black-red-white aesthetic and Pinterest-style masonry layout.
 
+## Customize quickly
+
+- Replace `assets/profile-placeholder.svg` with your own profile photo (you can keep the same filename).
+- Replace `assets/project-*.svg` thumbnails with your own project images.
+- Update social links in `script.js` under the `socialProfiles` object.
+- Language toggle (English/Japanese) is already enabled from the top navigation button.
+
 ## Run locally
 
 Open `index.html` directly in a browser.

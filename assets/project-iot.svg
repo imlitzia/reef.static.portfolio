@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" fill="none">
+  <rect width="640" height="360" fill="#100E0F"/>
+  <rect x="100" y="78" width="440" height="204" rx="18" fill="#171717" stroke="#D6001C" stroke-width="3"/>
+  <rect x="148" y="114" width="220" height="132" rx="12" fill="#222"/>
+  <circle cx="226" cy="180" r="45" fill="#111" stroke="#FF2945" stroke-width="3"/>
+  <circle cx="226" cy="180" r="16" fill="#FF2945"/>
+  <rect x="396" y="122" width="98" height="12" rx="6" fill="#2D2D2D"/>
+  <rect x="396" y="146" width="112" height="12" rx="6" fill="#2D2D2D"/>
+  <rect x="396" y="170" width="86" height="12" rx="6" fill="#2D2D2D"/>
+  <rect x="396" y="194" width="104" height="12" rx="6" fill="#2D2D2D"/>
+  <text x="320" y="336" fill="#F5F5F5" font-family="Inter, Arial, sans-serif" font-size="24" text-anchor="middle">IOT LIGHT SENSOR</text>
+</svg>

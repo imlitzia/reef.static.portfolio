@@ -60,6 +60,19 @@ a {
   color: var(--text);
 }
 
+.lang-toggle {
+  border: 1px solid var(--line);
+  background: #151515;
+  color: var(--text);
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.lang-toggle:hover {
+  border-color: var(--accent-soft);
+}
+
 .hero-content {
   max-width: 920px;
   margin: 2.4rem auto 0;
@@ -89,6 +102,20 @@ h1 {
   margin-top: 1.4rem;
   display: flex;
   gap: 0.8rem;
+}
+
+.social-links {
+  margin-top: 0.9rem;
+  display: flex;
+  gap: 0.6rem;
+}
+
+.social-links a {
+  font-size: 0.85rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.35rem 0.65rem;
+  color: #ffccd4;
 }
 
 .btn {
@@ -149,6 +176,19 @@ h1 {
   border-color: #61212b;
 }
 
+.profile-card {
+  text-align: center;
+}
+
+.profile-image {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.75rem;
+  border: 2px solid #4c1e26;
+}
+
 h2 {
   margin: 0 0 0.8rem;
   font-size: 1.1rem;
@@ -187,6 +227,15 @@ ul {
   border-radius: 12px;
   padding: 0.85rem;
   background: var(--card-alt);
+}
+
+.project-grid article img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 9px;
+  border: 1px solid #292929;
+  margin-bottom: 0.65rem;
 }
 
 .chips {
