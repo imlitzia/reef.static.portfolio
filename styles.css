@@ -497,6 +497,120 @@ ul {
   background: var(--accent-tint);
 }
 
+/* ---------- Hobbies (photo gallery) ---------- */
+
+.hobbies-grid {
+  margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 160px;
+  grid-auto-flow: dense;
+  gap: 0.9rem;
+}
+
+.hobby-item {
+  position: relative;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--surface-alt);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hobby-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}
+
+.hobby-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.hobby-item:hover img {
+  transform: scale(1.06);
+}
+
+.hobby-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(32, 20, 15, 0);
+  transition: background 0.2s ease;
+}
+
+.hobby-item:hover::after {
+  background: rgba(32, 20, 15, 0.08);
+}
+
+.hobby-item.span-2-col {
+  grid-column: span 2;
+}
+
+.hobby-item.span-2-row {
+  grid-row: span 2;
+}
+
+.hobby-item.span-2-both {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+/* ---------- Lightbox ---------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh 5vw;
+  background: rgba(20, 14, 10, 0.88);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.25s ease;
+}
+
+.lightbox.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: var(--radius-sm);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.5);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1.6rem;
+  right: 1.8rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.lightbox-close:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: rotate(90deg);
+}
+
 /* ---------- Two column (awards / languages) ---------- */
 
 .two-col {
@@ -710,6 +824,11 @@ ul {
   .two-col {
     grid-template-columns: 1fr;
   }
+
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 200px;
+  }
 }
 
 @media (max-width: 700px) {
@@ -743,5 +862,20 @@ ul {
 
   .timeline-item::before {
     left: -1.58rem;
+  }
+
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 150px;
+    gap: 0.6rem;
+  }
+
+  .hobby-item.span-2-both,
+  .hobby-item.span-2-col {
+    grid-column: span 2;
+  }
+
+  .hobby-item.span-2-row {
+    grid-row: span 1;
   }
 }

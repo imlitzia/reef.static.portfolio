@@ -24,6 +24,7 @@
           <a href="#experience" data-i18n="nav_experience">Experience</a>
           <a href="#projects" data-i18n="nav_projects">Projects</a>
           <a href="#skills" data-i18n="nav_skills">Skills</a>
+          <a href="#hobbies" data-i18n="nav_hobbies">Hobbies</a>
           <a href="#contact" data-i18n="nav_contact">Contact</a>
         </div>
         <button class="lang-toggle" id="langToggle" type="button" aria-label="Toggle language">
@@ -242,10 +243,49 @@
         </div>
       </section>
 
-      <section class="section alt">
+      <section class="section alt" id="hobbies">
         <div class="container">
           <div class="section-head reveal">
             <span class="eyebrow">06</span>
+            <h2 data-i18n="hobbies_title">Hobbies</h2>
+          </div>
+          <p class="lead reveal" data-i18n="hobbies_intro">
+            Photography is how I slow down outside of code — a few frames from what I've
+            been shooting lately.
+          </p>
+          <div class="hobbies-grid">
+            <button class="hobby-item span-2-both reveal" type="button" aria-label="Open photo 1">
+              <img src="./assets/hobbies/photo-1.svg" alt="Photography sample 1" loading="lazy" />
+            </button>
+            <button class="hobby-item reveal" type="button" aria-label="Open photo 2">
+              <img src="./assets/hobbies/photo-2.svg" alt="Photography sample 2" loading="lazy" />
+            </button>
+            <button class="hobby-item reveal" type="button" aria-label="Open photo 3">
+              <img src="./assets/hobbies/photo-3.svg" alt="Photography sample 3" loading="lazy" />
+            </button>
+            <button class="hobby-item span-2-row reveal" type="button" aria-label="Open photo 4">
+              <img src="./assets/hobbies/photo-4.svg" alt="Photography sample 4" loading="lazy" />
+            </button>
+            <button class="hobby-item span-2-col reveal" type="button" aria-label="Open photo 5">
+              <img src="./assets/hobbies/photo-5.svg" alt="Photography sample 5" loading="lazy" />
+            </button>
+            <button class="hobby-item reveal" type="button" aria-label="Open photo 6">
+              <img src="./assets/hobbies/photo-6.svg" alt="Photography sample 6" loading="lazy" />
+            </button>
+            <button class="hobby-item reveal" type="button" aria-label="Open photo 7">
+              <img src="./assets/hobbies/photo-7.svg" alt="Photography sample 7" loading="lazy" />
+            </button>
+            <button class="hobby-item reveal" type="button" aria-label="Open photo 8">
+              <img src="./assets/hobbies/photo-8.svg" alt="Photography sample 8" loading="lazy" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">07</span>
             <h2 data-i18n="awards_title">Awards &amp; Languages</h2>
           </div>
           <div class="two-col">
@@ -271,7 +311,7 @@
       <section class="section" id="contact">
         <div class="container">
           <div class="contact-card reveal">
-            <span class="eyebrow">07</span>
+            <span class="eyebrow">08</span>
             <h2 data-i18n="contact_title">Contact</h2>
             <p data-i18n="contact_text">Open to software engineering, UX, and immersive technology opportunities.</p>
             <div class="contact-links">
@@ -290,6 +330,11 @@
     <footer class="footer">
       <p><span data-i18n="footer_text">©</span> <span id="year"></span> Aarif Suksai. <span data-i18n="footer_built">Built for GitHub Pages.</span></p>
     </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>
+      <img id="lightboxImage" src="" alt="" />
+    </div>
 
     <script src="./script.js"></script>
   </body>
