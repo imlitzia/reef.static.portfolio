@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project | Aarif Suksai</title>
+    <meta name="description" content="Project detail - Aarif Suksai's portfolio." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <nav class="top-nav container">
+        <a class="brand" href="index.html">Aarif<span>.</span>Suksai</a>
+        <div class="nav-links">
+          <a href="index.html#experience" data-i18n="nav_experience">Experience</a>
+          <a href="index.html#projects" data-i18n="nav_projects">Projects</a>
+          <a href="index.html#skills" data-i18n="nav_skills">Skills</a>
+          <a href="index.html#contact" data-i18n="nav_contact">Contact</a>
+        </div>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Toggle language">
+          日本語
+        </button>
+      </nav>
+    </header>
+
+    <main class="project-detail" id="projectDetail">
+      <div class="container">
+        <a class="back-link reveal" href="index.html#projects" data-i18n="project_back">← Back to Projects</a>
+
+        <div class="project-detail-head reveal">
+          <p class="stack" id="projectStack"></p>
+          <h1 id="projectTitle"></h1>
+          <p class="lead" id="projectSummary"></p>
+        </div>
+
+        <div class="project-hero-image reveal">
+          <img id="projectImage" src="" alt="" />
+        </div>
+
+        <div class="project-content reveal" id="projectParagraphs"></div>
+
+        <div class="project-highlights reveal">
+          <h2 data-i18n="project_highlights_title">Highlights</h2>
+          <ul id="projectHighlights"></ul>
+        </div>
+
+        <a class="back-link reveal" href="index.html#projects" data-i18n="project_back">← Back to Projects</a>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p><span data-i18n="footer_text">©</span> <span id="year"></span> Aarif Suksai. <span data-i18n="footer_built">Built for GitHub Pages.</span></p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
