@@ -21,6 +21,7 @@ const translations = {
     nav_experience: "Experience",
     nav_projects: "Projects",
     nav_skills: "Skills",
+    nav_hobbies: "Hobbies",
     nav_contact: "Contact",
     tagline: "Computer Science • UX • VR • AI",
     hero_title: "Building human-centered products with code, design, and immersive tech.",
@@ -62,6 +63,9 @@ const translations = {
     education_degree: "Bachelor of Computer Science (Expected Graduation: 2025)",
     education_research: "Research: Kansei Engineering in VR, dynamic audio models for speech intelligibility and comfort.",
     skills_title: "Technical Skills",
+    hobbies_title: "Hobbies",
+    hobbies_intro:
+      "Photography is how I slow down outside of code — a few frames from what I've been shooting lately.",
     awards_title: "Awards",
     awards_1: "Grand Prize Winner - Official Logo Design Contest at SIT",
     awards_2: "Team Leader - Best Team at an Engineering Camp",
@@ -83,6 +87,7 @@ const translations = {
     nav_experience: "経歴",
     nav_projects: "プロジェクト",
     nav_skills: "スキル",
+    nav_hobbies: "趣味",
     nav_contact: "連絡先",
     tagline: "コンピュータサイエンス • UX • VR • AI",
     hero_title: "コードとデザイン、没入型技術で人間中心のプロダクトを創る。",
@@ -120,6 +125,8 @@ const translations = {
     education_degree: "コンピュータサイエンス学士（2025年卒業予定）",
     education_research: "研究: VRにおける感性工学、音声明瞭度と快適性を高める動的音響モデル。",
     skills_title: "技術スキル",
+    hobbies_title: "趣味",
+    hobbies_intro: "写真は、コードを離れて息抜きする時間です。最近撮った写真をいくつか紹介します。",
     awards_title: "受賞歴",
     awards_1: "芝浦工業大学 公式ロゴデザインコンテスト 最優秀賞",
     awards_2: "エンジニアリングキャンプ 最優秀チーム（リーダー）",
@@ -418,4 +425,42 @@ if (revealTargets.length && "IntersectionObserver" in window) {
   revealTargets.forEach((el) => revealObserver.observe(el));
 } else {
   revealTargets.forEach((el) => el.classList.add("in-view"));
+}
+
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");
+const hobbyItems = document.querySelectorAll(".hobby-item");
+
+if (lightbox && lightboxImage && hobbyItems.length) {
+  const openLightbox = (img) => {
+    lightboxImage.src = img.src;
+    lightboxImage.alt = img.alt;
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeLightbox = () => {
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  };
+
+  hobbyItems.forEach((item) => {
+    item.addEventListener("click", () => {
+      const img = item.querySelector("img");
+      if (img) openLightbox(img);
+    });
+  });
+
+  if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
+
+  lightbox.addEventListener("click", (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+
+  window.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
+  });
 }
