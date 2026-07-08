@@ -250,35 +250,46 @@
             <h2 data-i18n="hobbies_title">Hobbies</h2>
           </div>
           <p class="lead reveal" data-i18n="hobbies_intro">
-            Photography is how I slow down outside of code — a few frames from what I've
-            been shooting lately.
+            Photography is how I slow down outside of code — here are a few recent shots
+            straight from my Instagram.
           </p>
-          <div class="hobbies-grid">
-            <button class="hobby-item span-2-both reveal" type="button" aria-label="Open photo 1">
-              <img src="./assets/hobbies/photo-1.svg" alt="Photography sample 1" loading="lazy" />
-            </button>
-            <button class="hobby-item reveal" type="button" aria-label="Open photo 2">
-              <img src="./assets/hobbies/photo-2.svg" alt="Photography sample 2" loading="lazy" />
-            </button>
-            <button class="hobby-item reveal" type="button" aria-label="Open photo 3">
-              <img src="./assets/hobbies/photo-3.svg" alt="Photography sample 3" loading="lazy" />
-            </button>
-            <button class="hobby-item span-2-row reveal" type="button" aria-label="Open photo 4">
-              <img src="./assets/hobbies/photo-4.svg" alt="Photography sample 4" loading="lazy" />
-            </button>
-            <button class="hobby-item span-2-col reveal" type="button" aria-label="Open photo 5">
-              <img src="./assets/hobbies/photo-5.svg" alt="Photography sample 5" loading="lazy" />
-            </button>
-            <button class="hobby-item reveal" type="button" aria-label="Open photo 6">
-              <img src="./assets/hobbies/photo-6.svg" alt="Photography sample 6" loading="lazy" />
-            </button>
-            <button class="hobby-item reveal" type="button" aria-label="Open photo 7">
-              <img src="./assets/hobbies/photo-7.svg" alt="Photography sample 7" loading="lazy" />
-            </button>
-            <button class="hobby-item reveal" type="button" aria-label="Open photo 8">
-              <img src="./assets/hobbies/photo-8.svg" alt="Photography sample 8" loading="lazy" />
-            </button>
+          <!--
+            To feature your own posts: open each post on instagram.com, copy its URL,
+            and paste it into the data-instgrm-permalink attribute below, replacing the
+            REPLACE_WITH_POST_URL_n placeholders. Also update the "follow" link's href
+            further down with your own Instagram username.
+          -->
+          <div class="instagram-grid">
+            <div class="instagram-embed reveal">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="https://www.instagram.com/p/DQok1YLj07V/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+                data-instgrm-version="14"
+              ></blockquote>
+            </div>
+            <div class="instagram-embed reveal">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="REPLACE_WITH_POST_URL_2"
+                data-instgrm-version="14"
+              ></blockquote>
+            </div>
+            <div class="instagram-embed reveal">
+              <blockquote
+                class="instagram-media"
+                data-instgrm-permalink="REPLACE_WITH_POST_URL_3"
+                data-instgrm-version="14"
+              ></blockquote>
+            </div>
           </div>
+          <a
+            class="btn btn-ghost instagram-cta reveal"
+            href="https://www.instagram.com/imlitzia/"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-i18n="hobbies_follow"
+            >View more on Instagram →</a
+          >
         </div>
       </section>
 
@@ -331,11 +342,7 @@
       <p><span data-i18n="footer_text">©</span> <span id="year"></span> Aarif Suksai. <span data-i18n="footer_built">Built for GitHub Pages.</span></p>
     </footer>
 
-    <div class="lightbox" id="lightbox" aria-hidden="true">
-      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close">×</button>
-      <img id="lightboxImage" src="" alt="" />
-    </div>
-
     <script src="./script.js"></script>
+    <script async src="https://www.instagram.com/embed.js"></script>
   </body>
 </html>

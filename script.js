@@ -65,7 +65,8 @@ const translations = {
     skills_title: "Technical Skills",
     hobbies_title: "Hobbies",
     hobbies_intro:
-      "Photography is how I slow down outside of code — a few frames from what I've been shooting lately.",
+      "Photography is how I slow down outside of code — here are a few recent shots straight from my Instagram.",
+    hobbies_follow: "View more on Instagram →",
     awards_title: "Awards",
     awards_1: "Grand Prize Winner - Official Logo Design Contest at SIT",
     awards_2: "Team Leader - Best Team at an Engineering Camp",
@@ -126,7 +127,8 @@ const translations = {
     education_research: "研究: VRにおける感性工学、音声明瞭度と快適性を高める動的音響モデル。",
     skills_title: "技術スキル",
     hobbies_title: "趣味",
-    hobbies_intro: "写真は、コードを離れて息抜きする時間です。最近撮った写真をいくつか紹介します。",
+    hobbies_intro: "写真は、コードを離れて息抜きする時間です。Instagramに投稿した最近の写真をいくつか紹介します。",
+    hobbies_follow: "Instagramでもっと見る →",
     awards_title: "受賞歴",
     awards_1: "芝浦工業大学 公式ロゴデザインコンテスト 最優秀賞",
     awards_2: "エンジニアリングキャンプ 最優秀チーム（リーダー）",
@@ -425,42 +427,4 @@ if (revealTargets.length && "IntersectionObserver" in window) {
   revealTargets.forEach((el) => revealObserver.observe(el));
 } else {
   revealTargets.forEach((el) => el.classList.add("in-view"));
-}
-
-const lightbox = document.getElementById("lightbox");
-const lightboxImage = document.getElementById("lightboxImage");
-const lightboxClose = document.getElementById("lightboxClose");
-const hobbyItems = document.querySelectorAll(".hobby-item");
-
-if (lightbox && lightboxImage && hobbyItems.length) {
-  const openLightbox = (img) => {
-    lightboxImage.src = img.src;
-    lightboxImage.alt = img.alt;
-    lightbox.classList.add("open");
-    lightbox.setAttribute("aria-hidden", "false");
-    document.body.style.overflow = "hidden";
-  };
-
-  const closeLightbox = () => {
-    lightbox.classList.remove("open");
-    lightbox.setAttribute("aria-hidden", "true");
-    document.body.style.overflow = "";
-  };
-
-  hobbyItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      const img = item.querySelector("img");
-      if (img) openLightbox(img);
-    });
-  });
-
-  if (lightboxClose) lightboxClose.addEventListener("click", closeLightbox);
-
-  lightbox.addEventListener("click", (event) => {
-    if (event.target === lightbox) closeLightbox();
-  });
-
-  window.addEventListener("keydown", (event) => {
-    if (event.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
-  });
 }
